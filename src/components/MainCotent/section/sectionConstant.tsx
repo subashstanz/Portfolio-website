@@ -64,3 +64,18 @@ export const CERTIFICATION = [
   "Google IT support professional certificate – Technical support , System Admin",
   "NPTEL Python for Data science",
 ];
+
+export const EXPERIENCE_FP = [
+  'Developed No code SAAS product from scratch with great efficiency, responsiveness , clean architecture with well maintainable code base',
+  'Developed Task Builder , a task management feature for the customer which is a core feature in no code workflow process builder by several customer',
+  ' Developed Input Form , a form management for the response of the customer.',
+  ' Developed Product catalogue for the response of the Agents and Developed Custom Column , a mathematical formula input for the sheets response',
+  ' Developed other basic and core features for the SAAS product .',
+  'Created many reusable components and hooks for the feature development and code maintainability'
+]
+
+export const EXPERIENCE_GUIDANZ = [
+ ' Added various features and important improvements in the product such role based authentication etc' ,
+ 'Created some improvements in UX and feature flexibilty of the products for the customer',
+ ' Handled Devops (AWS- EC2, S3, Kibana , Grafana) for the product development.'
+]

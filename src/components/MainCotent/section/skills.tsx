@@ -53,7 +53,7 @@ const Skills = (props: Props) => {
                           background
                           backgroundPadding={6}
                           styles={buildStyles({
-                            backgroundColor: "#3e98c7",
+                            backgroundColor: "#42855B",
                             textColor: "#fff",
                             pathColor: "#fff",
                             trailColor: "transparent",
@@ -86,8 +86,8 @@ const Skills = (props: Props) => {
                       <ol type="1" key={index}>
                         <li>
                           <div className="flex w-11/12 my-2 space-x-1">
-                            <FiChevronRight className="w-5 h-5 mt-1 text-slate-900 " />
-                            <span className="font-normal leading-5 text-slate-500">
+                            <FiChevronRight className="w-5 h-5 mt-1 text-dark " />
+                            <span className="font-normal leading-5 text-normal">
                               {library}
                             </span>
                           </div>
@@ -102,8 +102,8 @@ const Skills = (props: Props) => {
                       <ol type="1" key={index}>
                         <li>
                           <div className="flex w-11/12 my-2 space-x-1">
-                            <FiChevronRight className="w-5 h-5 mt-1 text-slate-900 " />
-                            <span className="font-normal leading-5 text-slate-500">
+                            <FiChevronRight className="w-5 h-5 mt-1 text-dark " />
+                            <span className="font-normal leading-5 text-normal">
                               {library}
                             </span>
                           </div>
@@ -127,8 +127,8 @@ const Skills = (props: Props) => {
                       <ol type="1" key={index}>
                         <li>
                           <div className="flex w-11/12 my-2 space-x-1">
-                            <FiChevronRight className="w-5 h-5 mt-1 text-slate-900 " />
-                            <span className="font-normal leading-5 text-slate-500">
+                            <FiChevronRight className="w-5 h-5 mt-1 text-dark" />
+                            <span className="font-normal leading-5 text-normal">
                               {library}
                             </span>
                           </div>
@@ -143,8 +143,8 @@ const Skills = (props: Props) => {
                       <ol type="1" key={index}>
                         <li>
                           <div className="flex w-11/12 my-2 space-x-1">
-                            <FiChevronRight className="w-5 h-5 mt-1 text-slate-900 " />
-                            <span className="font-normal leading-5 text-slate-500">
+                            <FiChevronRight className="w-5 h-5 mt-1 text-dark " />
+                            <span className="font-normal leading-5 text-normal">
                               {library}
                             </span>
                           </div>
@@ -161,7 +161,7 @@ const Skills = (props: Props) => {
           animationData={skills}
           loop={true}
           autoplay={true}
-          style={{ width: 350, height: 350 }}
+          style={{ width: 250, height: 250 }}
         />
       </div>
     </section>

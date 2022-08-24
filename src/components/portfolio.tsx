@@ -10,7 +10,7 @@ const Portfolio = (props: Props) => {
   console.log("viewStarte", viewState);
   return (
     <div>
-      <div className="flex flex-col w-full h-full bg-slate-100">
+      <div className="flex flex-col w-full h-full bg-primary">
         <div className="fixed z-10 w-full">
           <TopBarNavigation viewUpdater={setViewState} />
         </div>
@@ -18,7 +18,7 @@ const Portfolio = (props: Props) => {
           <div className="fixed h-screen">
             <SideBar />
           </div>
-          <div className="w-full h-full bg-gray-100">
+          <div className="w-full h-full bg-primary">
             <MainContent view={viewState} />
           </div>
         </div>

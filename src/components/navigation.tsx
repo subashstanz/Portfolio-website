@@ -13,29 +13,15 @@ const TopBarNavigation = (props: Props) => {
   // const router = useRouter();
 
   const { viewUpdater } = props;
-  return (
+  return ( 
     <>
-      <nav className="flex items-center justify-between p-4 mx-auto bg-slate-100">
+      <nav className="flex items-center justify-between p-4 mx-auto bg-primary">
         <div
           className="flex items-center justify-around space-x-4 cursor-pointer"
           onClick={() => viewUpdater(null)}
         >
-          <div className="text-sm font-medium text-gray-500">Hello Peeps</div>
+          <div className="text-sm font-medium text-secondary">Hello Peeps</div>
           <motion.div
-            // initial={{
-            //   x: 0,
-            // }}
-            // animate={{
-            //   x: 100,
-            // }}
-            // transition={{
-            //   type: "tween",
-            //   ease: "easeInOut",
-            //   repeat: Infinity,
-            //   repeatType: "reverse",
-            //   repeatDelay: 1,
-            //   duration: 2,
-            // }}
             animate={{
               scale: [1, 2, 2, 1, 1],
               rotate: [0, 0, 30, 0, 0],
@@ -56,7 +42,7 @@ const TopBarNavigation = (props: Props) => {
           </motion.div>
         </div>
 
-        <ul className="flex items-center space-x-2 text-sm font-medium text-gray-500 mr-2">
+        <ul className="flex items-center space-x-2 text-sm font-medium text-secondary mr-2">
           {NAV_DETAILS.map((navigation, index) => {
             return (
               <li
@@ -72,37 +58,6 @@ const TopBarNavigation = (props: Props) => {
           {/* <Link href="https://docs.google.com/document/d/15IUe7bBhMwL8UvSEWhUfUYsM2uk_Fx7511dnWWvV9QY/edit?usp=sharing"> */}
 
           <motion.div
-            // initial={{
-            //   rotate: 0,
-            //   // x: -100
-            // }}
-            // animate={{
-            //   rotate: 180,
-            //   // x: 100
-            // }}
-            // transition={{
-            //   type: "tween",
-            //   ease: "easeInOut",
-            //   repeat: Infinity,
-            //   repeatType: "reverse",
-            //   repeatDelay: 1,
-            //   duration: 2,
-            // }}
-            // animate={{ rotate: 360, scale: 1 }}
-            // transition={{
-            //   type: "spring",
-            //   stiffness: 260,
-            //   damping: 20,
-            // }}
-            // whileHover={{
-            //   type: "spring",
-            //   damping: 20,
-            // }}
-
-            // whileHover={{ scale: 1.2 }}
-            // whileTap={{ scale: 0.9 }}
-            // transition={{ type: "spring", stiffness: 200, damping: 1, repeat: Infinity }}
-
             animate={{
               scale: [1, 1.2, 1.2, 1.2, 1],
               borderRadius: ["0%", "0%", "50%", "50%", "0%"]
@@ -114,9 +69,6 @@ const TopBarNavigation = (props: Props) => {
               repeat: Infinity,
               repeatDelay: 1
             }}
-            // animate={{ rotate: 360 }}
-            //     transition={{ ease: "linear", duration: 2, repeat: Infinity }}
-            // transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <a
               className="relative inline-block group focus:outline-none focus:ring"

@@ -10,7 +10,7 @@ const Certification = (props: Props) => {
   return (
     <section className="flex items-center justify-end w-full h-full">
       <div className="h-[48.313rem] w-[56.25rem] flex items-start justify-center flex-col space-y-5">
-        <div className="mb-2 mb-4 text-base font-normal font-semibold text-slate-500">
+        <div className="mb-2 mb-4 text-base font-normal font-semibold text-dark">
           Certification
         </div>
         <div className="flex flex-col w-full space-y-3">
@@ -21,7 +21,7 @@ const Certification = (props: Props) => {
                   <div className="flex items-center mt-2 mr-3">
                     <FiChevronRight className="w-5 h-5 mt-1 text-slate-900 " />
                   </div>
-                  <div className="font-medium leading-7 hover:text-gray-600">
+                  <div className="font-medium leading-7 text-secondarys">
                     {item}
                   </div>
                 </div>

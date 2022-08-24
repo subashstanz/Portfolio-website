@@ -16,8 +16,8 @@ function App() {
           {/* <div className="fixed h-screen">
             <SideBar />
           </div> */}
-          <div className="w-full h-full bg-slate-100">
-            <Portfolio />s
+          <div className="w-full h-full bg-[#FEFFDE]">
+            <Portfolio />
           </div>
         </div>
       </div>
