@@ -66,16 +66,36 @@ export const CERTIFICATION = [
 ];
 
 export const EXPERIENCE_FP = [
-  'Developed No code SAAS product from scratch with great efficiency, responsiveness , clean architecture with well maintainable code base',
-  'Developed Task Builder , a task management feature for the customer which is a core feature in no code workflow process builder by several customer',
-  ' Developed Input Form , a form management for the response of the customer.',
-  ' Developed Product catalogue for the response of the Agents and Developed Custom Column , a mathematical formula input for the sheets response',
-  ' Developed other basic and core features for the SAAS product .',
-  'Created many reusable components and hooks for the feature development and code maintainability'
-]
+  "Developed No code SAAS product from scratch with great efficiency, responsiveness , clean architecture with well maintainable code base",
+  "Developed Task Builder , a task management feature for the customer which is a core feature in no code workflow process builder by several customer",
+  " Developed Input Form , a form management for the response of the customer.",
+  " Developed Product catalogue for the response of the Agents and Developed Custom Column , a mathematical formula input for the sheets response",
+  " Developed other basic and core features for the SAAS product .",
+  "Created many reusable components and hooks for the feature development and code maintainability",
+];
 
 export const EXPERIENCE_GUIDANZ = [
- ' Added various features and important improvements in the product such role based authentication etc' ,
- 'Created some improvements in UX and feature flexibilty of the products for the customer',
- ' Handled Devops (AWS- EC2, S3, Kibana , Grafana) for the product development.'
-]
+  " Added various features and important improvements in the product such role based authentication etc",
+  "Created some improvements in UX and feature flexibilty of the products for the customer",
+  " Handled Devops (AWS- EC2, S3, Kibana , Grafana) for the product development.",
+];
+
+export const PROJECTS = [
+  {
+    item: "Tenor GIF search engine",
+    link: "https://tenor-api-gif-search-engine-clone.vercel.app/",
+    explanation:
+      "Cloned the tenor search engine with infinite loading with trending search ",
+  },
+  {
+    item: "React SAAS SideBar",
+    link: "https://github.com/subashstanz/SIdeBar-Dashboard-React",
+    explanation: "Developed the Sidebar for the SAAS product",
+  },
+  {
+    item: "Image Recognition",
+    link: "https://github.com/subashstanz/projects",
+    explanation:
+      "A algorithm that detects a cat image using deep Learning  specialization.",
+  },
+];

@@ -2,23 +2,27 @@ import React, { Dispatch, SetStateAction } from "react";
 import Lottie from "lottie-react";
 import handwave from "../assets/handwave.json";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   viewUpdater: Dispatch<SetStateAction<string | null>>;
 };
 
-const NAV_DETAILS = ["About", "Experience", "Education", "Contact"];
+const NAV_DETAILS = ["About", "Experience", "Education",  'Projects'];
 
 const TopBarNavigation = (props: Props) => {
+  
   // const router = useRouter();
 
   const { viewUpdater } = props;
+  let navigate = useNavigate();
+
   return ( 
     <>
       <nav className="flex items-center justify-between p-4 mx-auto bg-primary">
         <div
           className="flex items-center justify-around space-x-4 cursor-pointer"
-          onClick={() => viewUpdater(null)}
+          onClick={() => navigate(`/`)}
         >
           <div className="text-sm font-medium text-secondary">Hello Peeps</div>
           <motion.div
@@ -43,17 +47,17 @@ const TopBarNavigation = (props: Props) => {
         </div>
 
         <ul className="flex items-center space-x-2 text-sm font-medium text-secondary mr-2">
-          {NAV_DETAILS.map((navigation, index) => {
+          {/* {NAV_DETAILS.map((navigation, index) => {
             return (
               <li
                 className="hidden cursor-pointer lg:block"
                 key={index}
-                onClick={() => viewUpdater(navigation)}
+                onClick={() => navigate(`${navigation}`)}
               >
                 <span className="px-3 py-2 rounded-lg">{navigation}</span>
               </li>
             );
-          })}
+          })} */}
 
           {/* <Link href="https://docs.google.com/document/d/15IUe7bBhMwL8UvSEWhUfUYsM2uk_Fx7511dnWWvV9QY/edit?usp=sharing"> */}
 
