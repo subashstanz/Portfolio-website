@@ -3,40 +3,48 @@ import Lottie from "lottie-react";
 import handwave from "../assets/handwave.json";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 type Props = {
   viewUpdater: Dispatch<SetStateAction<string | null>>;
 };
 
-const NAV_DETAILS = ["About", "Experience", "Education",  'Projects'];
+const NAV_DETAILS = ["About", "Experience", "Education", "Projects"];
 
 const TopBarNavigation = (props: Props) => {
-  
   // const router = useRouter();
 
   const { viewUpdater } = props;
   let navigate = useNavigate();
 
-  return ( 
+  return (
     <>
       <nav className="flex items-center justify-between p-4 mx-auto bg-primary">
         <div
           className="flex items-center justify-around space-x-4 cursor-pointer"
-          onClick={() => navigate(`/`)}
+          onClick={() => scroll.scrollToTop()}
         >
           <div className="text-sm font-medium text-secondary">Hello Peeps</div>
           <motion.div
             animate={{
               scale: [1, 2, 2, 1, 1],
               rotate: [0, 0, 30, 0, 0],
-              borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+              borderRadius: ["0%", "0%", "50%", "50%", "0%"],
             }}
             transition={{
               duration: 2,
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
               repeat: Infinity,
-              repeatDelay: 1
+              repeatDelay: 1,
             }}
           >
             <a className="inline-flex items-center justify-center w-10 h-10 rounded-lg">
@@ -47,31 +55,43 @@ const TopBarNavigation = (props: Props) => {
         </div>
 
         <ul className="flex items-center space-x-2 text-sm font-medium text-secondary mr-2">
-          {/* {NAV_DETAILS.map((navigation, index) => {
+          {NAV_DETAILS.map((navigation, index) => {
             return (
-              <li
-                className="hidden cursor-pointer lg:block"
-                key={index}
-                onClick={() => navigate(`${navigation}`)}
+              <Link
+                activeClass="active"
+                smooth
+                spy
+                to={navigation}
+                offset={50}
+                duration={500}
+                hashSpy={true}
+                delay={12}
+                isDynamic={true}
               >
-                <span className="px-3 py-2 rounded-lg">{navigation}</span>
-              </li>
+                <li
+                  className="hidden cursor-pointer lg:block"
+                  key={index}
+                  // onClick={() => navigate(`${navigation}`)}
+                >
+                  <span className="px-3 py-2 rounded-lg">{navigation}</span>
+                </li>
+              </Link>
             );
-          })} */}
+          })}
 
           {/* <Link href="https://docs.google.com/document/d/15IUe7bBhMwL8UvSEWhUfUYsM2uk_Fx7511dnWWvV9QY/edit?usp=sharing"> */}
 
           <motion.div
             animate={{
               scale: [1, 1.2, 1.2, 1.2, 1],
-              borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+              borderRadius: ["0%", "0%", "50%", "50%", "0%"],
             }}
             transition={{
               duration: 2,
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
               repeat: Infinity,
-              repeatDelay: 1
+              repeatDelay: 1,
             }}
           >
             <a

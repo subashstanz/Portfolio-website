@@ -1,5 +1,4 @@
 import Lottie from "lottie-react";
-import React from "react";
 import { FiChevronRight } from "react-icons/fi";
 import experience from "../../../assets/experience.json";
 import { EXPERIENCE_FP, EXPERIENCE_GUIDANZ } from "./sectionConstant";

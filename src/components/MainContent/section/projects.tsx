@@ -1,8 +1,5 @@
-import React, { Fragment } from "react";
 import { FiChevronRight } from "react-icons/fi";
-import { CERTIFICATION, PROJECTS } from "./sectionConstant";
-import certification from "../../../assets/certification.json";
-import Lottie from "lottie-react";
+import { PROJECTS } from "./sectionConstant";
 
 type Props = {};
 

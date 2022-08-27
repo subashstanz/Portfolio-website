@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import { FiChevronRight } from "react-icons/fi";
 import { CERTIFICATION } from "./sectionConstant";
 import certification  from "../../../assets/certification.json";

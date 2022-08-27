@@ -5,7 +5,6 @@ import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 type Props = {};
 
 const SideBar = (props: Props) => {
-  const ICON = ["github", "linkedin", "instagram", "twitter"];
 
   return (
     <Fragment>
